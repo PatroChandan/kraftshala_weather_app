@@ -3,12 +3,17 @@ import coldBg from "./assets/cold.jpg";
 import Descriptions from "./components/Descriptions";
 import { useEffect, useState } from "react";
 import { getFormattedWeatherData } from "./weatherService";
+import { ReactComponent as Sun } from "./assets/Sun.svg";
+import { ReactComponent as Moon } from "./assets/Moon.svg";
+import { FaSun } from "react-icons/fa";
+import { FaRegMoon } from "react-icons/fa";
 
 function App() {
-  const [city, setCity] = useState("Paris");
+  const [city, setCity] = useState("Delhi");
   const [weather, setWeather] = useState(null);
   const [units, setUnits] = useState("metric");
   const [bg, setBg] = useState(hotBg);
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
     const fetchWeatherData = async () => {
@@ -40,6 +45,15 @@ function App() {
     }
   };
 
+  const toggleDarkMode = () => {
+    setDark((prevDark) => !prevDark);
+    document
+      .querySelectorAll(".section__inputs, .section__temperature, .card")
+      .forEach((el) => {
+        el.classList.toggle("darkmode");
+      });
+  };
+
   return (
     <div className="app" style={{ backgroundImage: `url(${bg})` }}>
       <div className="overlay">
@@ -52,6 +66,10 @@ function App() {
                 name="city"
                 placeholder="Enter City..."
               />
+              <button className="dark" onClick={toggleDarkMode}>
+                {/* <img src={dark ? <FaSun /> : <Sun />} alt="" /> */}
+                {dark ? <FaRegMoon /> : <FaSun />}
+              </button>
               <button onClick={(e) => handleUnitsClick(e)}>°F</button>
             </div>
 

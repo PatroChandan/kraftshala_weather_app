@@ -1,6 +1,10 @@
 :root {
-  --section-overlay: rgba(0, 0, 0, 0.7);
+  --section-overlay: rgba(0, 0, 0, 0.3);
   --background-overlay: rgba(0, 0, 0, 0.2);
+}
+
+.darkmode {
+  --section-overlay: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -66,6 +70,12 @@
   outline: none;
 }
 
+.section__inputs > .dark {
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
 .section__inputs > button {
   padding: 10px 50px;
   border: none;
@@ -95,4 +105,10 @@
 
 .temperature > h1 {
   font-size: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section__inputs > input {
+    width: 200px;
+  }
 }
