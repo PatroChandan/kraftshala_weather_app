@@ -3,8 +3,6 @@ import coldBg from "./assets/cold.jpg";
 import Descriptions from "./components/Descriptions";
 import { useEffect, useState } from "react";
 import { getFormattedWeatherData } from "./weatherService";
-import { ReactComponent as Sun } from "./assets/Sun.svg";
-import { ReactComponent as Moon } from "./assets/Moon.svg";
 import { FaSun } from "react-icons/fa";
 import { FaRegMoon } from "react-icons/fa";
 
@@ -64,7 +62,7 @@ function App() {
                 onKeyDown={enterKeyPressed}
                 type="text"
                 name="city"
-                placeholder="Enter City..."
+                placeholder="Press enter to search..."
               />
               <button className="dark" onClick={toggleDarkMode}>
                 {/* <img src={dark ? <FaSun /> : <Sun />} alt="" /> */}
