@@ -111,4 +111,15 @@
   .section__inputs > input {
     width: 200px;
   }
+  .section__inputs > button {
+    padding: 10px 30px;
+  }
+  .temperature > h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .section__inputs > button {
+    padding: 10px 10px;
+  }
 }

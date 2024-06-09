@@ -65,7 +65,6 @@ function App() {
                 placeholder="Press enter to search..."
               />
               <button className="dark" onClick={toggleDarkMode}>
-                {/* <img src={dark ? <FaSun /> : <Sun />} alt="" /> */}
                 {dark ? <FaRegMoon /> : <FaSun />}
               </button>
               <button onClick={(e) => handleUnitsClick(e)}>°F</button>
