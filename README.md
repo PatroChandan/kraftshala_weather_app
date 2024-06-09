@@ -16,6 +16,10 @@ if temperature grater then 20° then it will show sunny image and if we selected
 
 ![alt text](<src/assets/Light sunny.png>)
 
+This is the mobile view
+
+![alt text](<src/assets/Mobile screen.png>)
+
 ## Live Demo
 
 Check out the hosted link of the application : https://kraftshala-weather-app.vercel.app/
