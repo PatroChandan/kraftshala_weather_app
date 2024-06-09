@@ -1,18 +1,18 @@
 # Weather App
 
-if temperature less then 20 then it will show snowy image and if we selected darkmode then this background will show in the application.
+if temperature less then 20° then it will show snowy image and if we selected darkmode then this background will show in the application.
 
 ![alt text](<src/assets/Dark snowy.png>)
 
-if temperature grater then 20 then it will show sunny image and if we selected darkmode then this background will show in the application.
+if temperature grater then 20° then it will show sunny image and if we selected darkmode then this background will show in the application.
 
 ![alt text](<src/assets/Dark sunny.png>)
 
-if temperature less then 20 then it will show snowy image and if we selected lightkmode then this background will show in the application.
+if temperature less then 20° then it will show snowy image and if we selected lightkmode then this background will show in the application.
 
 ![alt text](<src/assets/Light snowy.png>)
 
-if temperature grater then 20 then it will show sunny image and if we selected lightkmode then this background will show in the application.
+if temperature grater then 20° then it will show sunny image and if we selected lightkmode then this background will show in the application.
 
 ![alt text](<src/assets/Light sunny.png>)
 
